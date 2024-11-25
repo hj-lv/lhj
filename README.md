@@ -1,4 +1,4 @@
-# SIM：Afastreal-time graph stream summarization with improved memory efficiency and accuracy
+# SIM：A fast real-time graph stream summarization with improved memory efficiency and accuracy
 
 ---
 ### Paper
