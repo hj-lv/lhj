@@ -25,7 +25,7 @@ Ubuntu with g++ and make.
 
 #### Requirements
 - Ensure __g++__ and __make__ are installed.  Our experimental platform is
-  equipped with Ubuntu 20.0.
+  equipped with Ubuntu 20.0.8
 
 - Prepare the test files.
     - You can use pcap,caida,dplp and so on to test its performance.
@@ -35,7 +35,7 @@ Ubuntu with g++ and make.
 - Compile examples with make
 
 ```
-    $ make main
+    $ make
 ```
 
     - The g++ compiler should be suitable 
@@ -45,6 +45,6 @@ Ubuntu with g++ and make.
 - Run the examples, and the program will output some statistics about the detection accuracy. 
 
 ```
-$ ./main
+$ ./sim
 ```
 
