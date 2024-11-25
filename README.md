@@ -49,3 +49,4 @@ Ubuntu with g++ and make.
 $ ./sim
 ```
 
+Note：You can change the data in the result.txt to change the basic configuration of the data structure.
