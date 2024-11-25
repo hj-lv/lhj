@@ -34,7 +34,6 @@ Ubuntu with g++ and make.
 
 ```
     $ make main
-
 ```
 
     - The g++ compiler should be suitable 
@@ -45,6 +44,5 @@ Ubuntu with g++ and make.
 
 ```
 $ ./main
-
 ```
 
