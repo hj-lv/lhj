@@ -17,7 +17,7 @@ __ Computer Networks 248 (2024) 110502__
 - datatypes.hpp: define data types
 - RrConfig.cpp,RrConfig.h: read and parse configuration files
 - util.h: define some universal functions
-- result.txt: record the basic configuration and results
+- result.txt: record the results
 ---
 
 ### Compile and Run the examples
@@ -49,4 +49,6 @@ Ubuntu with g++ and make.
     $ ./sim
 ```
 
-Note：You can change the data in the result.txt to change the basic configuration of the data structure.
+#### Note：
+- You can change the data in the result.txt to change the basic configuration of the data structure.
+- Before using, please check the test file in main.cpp.
