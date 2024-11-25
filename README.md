@@ -52,4 +52,4 @@ Ubuntu with g++ and make.
 
 #### Note：
 - You can change the data in the result.txt to change the basic configuration of the data structure.
-- Before using, please check the test file in main.cpp.
+- Before using, please check the format of the configuration file in main.cpp.
