@@ -12,9 +12,11 @@ __Computer Networks 248 (2024) 110502__
 - hash.c,hash.h: the hash function
 - SIM_heavy.hpp: store heavy flow
 - SIM_light.hpp: store little flow
-- SIM.hpp：the overall framework of data structure
-- p4/mv\_32.p4: p4 implementation of MV-Sketch for 32-bit flow key
-- p4/mv\_104.p4: p4 implementation of MV-Sketch for 5-tuple flow key
+- SIM.hpp: the overall framework of data structure
+- adaptor.cpp,adaptor.hpp: used to process the data file and obtain each edge information in the data file
+- datatypes.hpp: define data types
+- RrConfig.cpp,RrConfig.h: read and parse configuration files
+- util.h: define some universal functions
 ---
 
 ### Compile and Run the examples
