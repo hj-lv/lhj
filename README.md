@@ -17,6 +17,7 @@ __ Computer Networks 248 (2024) 110502__
 - datatypes.hpp: define data types
 - RrConfig.cpp,RrConfig.h: read and parse configuration files
 - util.h: define some universal functions
+- result.txt: record the basic configuration and results
 ---
 
 ### Compile and Run the examples
@@ -28,7 +29,7 @@ Ubuntu with g++ and make.
   equipped with Ubuntu 20.0.8
 
 - Prepare the test files.
-    - You can use pcap,caida,dplp and so on to test its performance.
+    - You can use caida,dplp and so on to test its performance.
       
 
 #### Compile
@@ -38,7 +39,7 @@ Ubuntu with g++ and make.
     $ make
 ```
 
-    - The g++ compiler should be suitable 
+- The g++ compiler should be suitable 
 
 
 #### Run
