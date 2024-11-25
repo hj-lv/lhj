@@ -4,16 +4,15 @@
 ### Paper
 __ Zhuo Li, Shuaijun Liu, Jindian Liua, Yu Zhang, Teng Liang, Kaihua Liu__
 SIM：Afastreal-time graph stream summarization with improved memory efficiency and accuracy
-_Computer Networks 248 (2024) 110502_
+__Computer Networks 248 (2024) 110502__
 
 ---
 ### Files
-- mvsketch.hpp. mvsketch.cpp: the implementation of MV-Sketch
-- mvsketch\_simd.hpp, mvsketch\_simd.cpp: the SIMD version of MV-Sketch
-- main\_hitter.cpp: example about heavy hitter detection
-- main\_changer.cpp: example about heavy changer detection
-- main\_simd.cpp: example about heavy hitter detection with SIMD optimized
-  MV-Sketch
+- main.cpp,main,hpp: the implementation of SIM
+- hash.c,hash.h: the hash function
+- SIM_heavy.hpp: store heavy flow
+- SIM_light.hpp: store little flow
+- SIM.hpp：the overall framework of data structure
 - p4/mv\_32.p4: p4 implementation of MV-Sketch for 32-bit flow key
 - p4/mv\_104.p4: p4 implementation of MV-Sketch for 5-tuple flow key
 ---
@@ -24,44 +23,28 @@ Ubuntu with g++ and make.
 
 #### Requirements
 - Ensure __g++__ and __make__ are installed.  Our experimental platform is
-  equipped with Ubuntu 14.04, g++ 4.8.4 and make 3.81.
+  equipped with Ubuntu 20.0.
 
-- Ensure the necessary library libpcap is installed.
-    - It can be installed in most Linux distributions (e.g., apt-get install
-      libpcap-dev in Ubuntu).
-
-- Prepare the pcap files.
-    - We provide two small pcap files
-      [here](https://drive.google.com/file/d/1WLEjB-w4ZlNshl1vUMb98rrowFuMBWuJ/view?usp=sharing).
-      You can download and put them in the "traces" folder for testing.  
-    - Specify the path of each pcap file in "iptraces.txt". 
-    - Note that one pcap file is regarded as one epoch in our examples. To run
-      the heavy changer example, you need to specify at least two pcap files.
+- Prepare the test files.
+    - You can use pcap,caida,dplp and so on to test its performance.
       
 
 #### Compile
 - Compile examples with make
 
 ```
-    $ make main_hitter
-    $ make main_changer
-    $ make main_simd
+    $ make main
+
 ```
-- To compile the SIMD example, you need to make sure your CPU and compiler can support AVX and AVX2.
-    - Check your CPU with the command to make sure the flags contain "avx" and "avx2"
-    ```
-    $ cat /proc/cpuinfo
-    ```
-    - The g++ compiler should have version above 4.8   
+
+    - The g++ compiler should be suitable 
 
 
 #### Run
 - Run the examples, and the program will output some statistics about the detection accuracy. 
 
 ```
-$ ./main_hitter
-$ ./main_changer
-$ ./main_simd
+$ ./main
+
 ```
 
-- Note that you can change the configuration of MV-Sketch, e.g. number of rows and buckets in the example source code for testing.
