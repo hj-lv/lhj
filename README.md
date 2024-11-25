@@ -46,7 +46,7 @@ Ubuntu with g++ and make.
 - Run the examples, and the program will output some statistics about the detection accuracy. 
 
 ```
-$ ./sim
+    $ ./sim
 ```
 
 Note：You can change the data in the result.txt to change the basic configuration of the data structure.
