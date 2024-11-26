@@ -3,7 +3,7 @@
 ---
 ### Paper
 __Zhuo Li, Shuaijun Liu, Jindian Liua, Yu Zhang, Teng Liang and Kaihua Liu__
-SIM：Afastreal-time graph stream summarization with improved memory efficiency and accuracy
+SIM：Afastreal-time graph stream summarization with improved memory efficiency and accuracy.
 _Computer Networks 248 (2024) 110502_
 
 ---
