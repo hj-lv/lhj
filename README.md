@@ -27,20 +27,20 @@ Ubuntu with g++ and make.
 
 #### Requirements
 - Ensure __g++__ and __make__ are installed.  Our experimental platform is
-  equipped with Ubuntu 20.04
+  equipped with Ubuntu 20.04.
 
 - Prepare the test files.
     - You can use twitter,caida,dplp and so on to test its performance.
       
 
 #### Compile
-- Compile examples with make
+- Compile examples with make.
 
 ```
     $ make
 ```
 
-- The g++ compiler should be suitable 
+- The g++ compiler should be suitable.
 
 
 #### Run
